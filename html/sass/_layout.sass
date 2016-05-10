@@ -1,0 +1,171 @@
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+
+%contenedores
+	padding: 100px 0
+
+.section-title
+	font: 700 40px $third-font
+	margin: 0
+	color: #333
+	text-transform: uppercase
+	+ p
+		font: 400 italic $fourth-font
+		margin: 10px 0 75px
+	&.white
+		color: #FFF
+		+ p
+			color: #fff
+
+
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default
+	background-color: #222
+	border: none
+
+	.navbar-brand
+		color: $main-color
+		font-family: $second-font
+		&:hover,
+		&:active,
+		&:focus
+			color: $main-color !important
+
+	.navbar-toggle
+		border: none
+		background-color: $main-color
+		color: #fff
+		&:hover,
+		&:active,
+		&:focus
+			background-color: $main-color !important
+
+	.navbar-nav
+		>li
+			>a
+				font-family: $third-font
+				color: #fff
+				text-transform: uppercase
+				&:hover,
+				&:active,
+				&:focus
+					color: $main-color !important
+
+		>.active
+			>a
+				color: #fed136
+				background-color: transparent !important
+
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+#banner
+	background: url(../images/header-bg.jpg) center center/cover
+
+.intro-text
+	padding: 100px 0 50px
+	color: #fff
+
+	h2
+		font: 400 italic 22px/22px $fourth-font
+		margin-bottom: 25px
+
+	h1
+		font: 700 50px/50px $third-font
+		text-transform: uppercase
+
+	a
+		background-color: $main-color
+		color: #fff
+		text-transform: uppercase
+		font: 400 18px $third-font
+		padding: 20px 40px
+		+b-ra(5px)
+		&:hover
+			color: #FFF
+
+
+/***************************************/
+/*=========     SERVICES     =========*/
+/*************************************/
+#services
+	@extend %contenedores
+
+	.glyphicon
+		width: 115px
+		height: 115px
+		background-color: $main-color
+		+b-ra(50%)
+		line-height: 115px
+		color: #fff !important
+		font-size: 50px !important
+
+	.item-subtitle
+		font-family: $third-font
+		font-size: 20px
+		+ p
+			line-height: 25px
+			margin-bottom: 30px
+
+
+/****************************************/
+/*=========     PORTFOLIO     =========*/
+/**************************************/
+#portfolio
+	@extend %contenedores
+	background-color: $third-color
+
+.portfolio-item
+	margin-bottom: 0 auto 40px
+	max-width: 400px
+	figure
+		position: relative
+		div
+			position: absolute
+			left: 0
+			top: 0
+			width: 100%
+			height: 100%
+			background-color: rgba(254,209,54,0.8)
+			opacity: 0
+			+ttion(500ms)
+			span
+				position: absolute
+				left: 50%
+				top: 50%
+				color: #fff
+				font-size: 50px
+				transform: translate(-50%,-50%) scale(0)
+				+ttion(300ms)
+		&:hover
+			div
+				opacity: 1
+				span
+					transform: translate(-50%,-50%) scale(1)
+
+
+
+
+/************************************/
+/*=========     ABOUT     =========*/
+/**********************************/
+
+
+/***********************************/
+/*=========     TEAM     =========*/
+/*********************************/
+
+
+/**************************************/
+/*=========     CONTACT     =========*/
+/************************************/
+
+
+/**************************************/
+/*=========     FOOTER     =========*/
+/************************************/
